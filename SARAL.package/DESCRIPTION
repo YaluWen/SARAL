@@ -1,0 +1,13 @@
+Package: SARAL
+Title: Genetic Risk Prediction Using a Spatial Autoregressive Model with Adaptive Lasso 
+Version: 0.1
+Authors@R: c(
+    person("Yalu", "Wen", email = "y.wen@auckland.ac.nz", role = "aut"),
+    person("Cherry", "Weng", email = "weng.cherry@gmail.com", role = c("aut","cre")))
+Description: The R package implements SARAL algorithm which is designed to build genetic risk prediction model with sequencing data.
+Depends: R (>= 3.3.2)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: optimx, expm, msgps, rrBLUP,psych
