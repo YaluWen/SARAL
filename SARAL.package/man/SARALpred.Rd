@@ -37,7 +37,7 @@ A list that contains the predicted values, the pearson correlations and mean squ
 This function is used to predict outcomes based on individual's genetic profiles.
 }
 \examples{
-# This may take 2 hour, don't run if not needed #
+# This may take 2 hours, don't run if not needed #
 Y=SARAL::example_SARAL$Y;
 Geno=SARAL::example_SARAL$Geno;
 TrainID=SARAL::example_SARAL$TrainID;
