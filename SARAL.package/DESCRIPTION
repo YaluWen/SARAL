@@ -3,6 +3,7 @@ Title: Genetic Risk Prediction Using a Spatial Autoregressive Model with Adaptiv
 Version: 0.1
 Authors@R: c(
     person("Yalu", "Wen", email = "y.wen@auckland.ac.nz", role = "aut"),
+    person("Qing", "Lu", email="qlu@epi.msu.edu", role="aut"),
     person("Cherry", "Weng", email = "weng.cherry@gmail.com", role = c("aut","cre")))
 Description: The R package implements SARAL algorithm which is designed to build genetic risk prediction model with sequencing data.
 Depends: R (>= 3.3.2)
