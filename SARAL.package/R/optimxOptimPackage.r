@@ -280,7 +280,7 @@ SARpredassomain<-function(data,compare='rrblup',assess=TRUE,methods=c("Cp","AICc
 #' @param methods A string vector that determines which model selection criterion is used to select model for SARAL. By default, it uses Mallows' Cp (Cp), bias corrected AIC (AICc), generalized cross validataion (GCV), BIC, and information theoretic minimum message length (MML).
 #' @return A list that contains the predicted values, the pearson correlations and mean square errors (if \code{assess=TRUE}), and error if algorithm does not converge. The list also contains a list of similarity measure (if \code{SaveSimilarity=TRUE}).
 #' @examples
-#' # This may take 2 hour, don't run if not needed #
+#' # This may take 2 hours, don't run if not needed #
 #' Y=SARAL::example_SARAL$Y;
 #' Geno=SARAL::example_SARAL$Geno;
 #' TrainID=SARAL::example_SARAL$TrainID;
