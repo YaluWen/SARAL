@@ -1,13 +1,3 @@
-### This is the required function ####
-#library(optimx);
-#library(psych)
-#library(lars);
-#library(mvtnorm);
-#library(expm)
-#library(msgps);
-#library(rrBLUP)
-#library(matrixcalc)
-#library(nloptr)
 ## Likelihood ##
 neg.likelihood.SAR.MLE.sigma<-function(para,env)
 {
@@ -140,7 +130,6 @@ SARpredassomain<-function(data,compare='rrblup',assess=TRUE,methods=c("Cp","AICc
     while((!(opt1$kkt2)| is.na(opt1$kkt2)) & step < max.step)
     {
       int1=runif(length(W),-1/maxvalue,1/maxvalue);
-      #opt1 <- optimx::optimx(int1,neg.likelihood.SAR.MLE.sigma,hessian = TRUE,env=env,method="L-BFGS-B")
       opt1 <- optimx::optimx(int1,neg.likelihood.SAR.MLE.sigma,gr=neg.firstderi.SAR.MLE.sigma, hessian = TRUE,env=env,method="L-BFGS-B",itnmax=5000)
 
       second<-attr(opt1,"details")[1,]$nhatend;
